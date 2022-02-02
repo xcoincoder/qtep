@@ -1,5 +1,5 @@
-#ifndef QTUMLEDGER_H
-#define QTUMLEDGER_H
+#ifndef QTEPLEDGER_H
+#define QTEPLEDGER_H
 
 #include <string>
 #include <vector>

@@ -1,9 +1,9 @@
-#ifndef QTUMVERSIONCHECKER_H
-#define QTUMVERSIONCHECKER_H
+#ifndef QTEPVERSIONCHECKER_H
+#define QTEPVERSIONCHECKER_H
 
 #include <QObject>
 
-#define QTUM_RELEASES "https://github.com/xcoincoder/qtum/releases"
+#define QTEP_RELEASES "https://github.com/xcoincoder/qtum/releases"
 
 class Version {
 
@@ -95,4 +95,4 @@ private:
     Version currentVersion;
 };
 
-#endif // QTUMVERSIONCHECKER_H
+#endif // QTEPVERSIONCHECKER_H

@@ -33,7 +33,7 @@ Basic usage resources:
 
 Development resources:
 
-* [Qtum Book - A Developer's Guide To QTUM](http://book.qtum.site/en/)
+* [Qtum Book - A Developer's Guide To QTEP](http://book.qtum.site/en/)
 * [Qtum contract usage](https://docs.qtum.site/en/QRC20-Token-Introduce.html)
 * [Deploying a custom token to Qtum](https://blog.qtum.org/qtum-custom-token-walkthrough-467d725fa27d)
 * [QtumJS document](https://xcoincoder.github.io/qtumjs-doc/)
@@ -60,7 +60,7 @@ Developer's Tools
   * https://github.com/xcoincoder/qtumportal
 * Docker images for running qtum services
   * https://github.com/xcoincoder/qtum-docker
-* qtum.info API that powers the block explorer and the QTUM Web wallet
+* qtum.info API that powers the block explorer and the QTEP Web wallet
   * https://github.com/xcoincoder/qtuminfo-api#qtuminfo-api-documentation
 
 
@@ -71,7 +71,7 @@ Qtum Core is our primary mainnet wallet. It implements a full node and is capabl
 
 Qtum Core currently implements the following:
 
-* Sending/Receiving QTUM coins
+* Sending/Receiving QTEP coins
 * Sending/Receiving QRC20 tokens on the Qtum network
 * Staking and creating blocks for the Qtum network
 * Creating and interacting with smart contracts
@@ -93,7 +93,7 @@ A browser wallet that supports the Ledger hardware wallet, offline cold wallet, 
 
 Web site https://qtumwallet.org
 
-User documentation https://github.com/xcoincoder/documents/tree/master/en/QTUM-WebWallet-usage
+User documentation https://github.com/xcoincoder/documents/tree/master/en/QTEP-WebWallet-usage
 
 ### Qtum Electrum
 

@@ -1,5 +1,5 @@
-#ifndef QTUMPUSHBUTTON_H
-#define QTUMPUSHBUTTON_H
+#ifndef QTEPPUSHBUTTON_H
+#define QTEPPUSHBUTTON_H
 #include <QPushButton>
 #include <QStyleOptionButton>
 #include <QIcon>
@@ -21,4 +21,4 @@ private:
     QIcon m_downIcon;
 };
 
-#endif // QTUMPUSHBUTTON_H
+#endif // QTEPPUSHBUTTON_H

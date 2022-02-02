@@ -1,12 +1,12 @@
-#ifndef QTUMDELEGATION_H
-#define QTUMDELEGATION_H
+#ifndef QTEPDELEGATION_H
+#define QTEPDELEGATION_H
 #include <string>
 #include <vector>
 #include <map>
 #include <stdint.h>
 #include <uint256.h>
 
-class QtumDelegationPriv;
+class QtepDelegationPriv;
 class ContractABI;
 
 extern const std::string strDelegationsABI;
@@ -77,7 +77,7 @@ struct DelegationEvent
 };
 
 /**
- * @brief The IQtumStaker class Delegation filter
+ * @brief The IQtepStaker class Delegation filter
  */
 class IDelegationFilter
 {
@@ -86,20 +86,20 @@ public:
 };
 
 /**
- * @brief The QtumDelegation class Communicate with the qtum delegation contract
+ * @brief The QtepDelegation class Communicate with the qtep delegation contract
  */
-class QtumDelegation {
+class QtepDelegation {
     
 public:
     /**
-     * @brief QtumDelegation Constructor
+     * @brief QtepDelegation Constructor
      */
-    QtumDelegation();
+    QtepDelegation();
 
     /**
-     * @brief ~QtumDelegation Destructor
+     * @brief ~QtepDelegation Destructor
      */
-    virtual ~QtumDelegation();
+    virtual ~QtepDelegation();
 
     /**
      * @brief GetDelegation Get delegation for an address
@@ -189,8 +189,8 @@ public:
     static bool SetSignedStaker(std::vector<unsigned char>& data, const std::string& base64PoD);
 
 private:
-    QtumDelegation(const QtumDelegation&);
-    QtumDelegation& operator=(const QtumDelegation&);
-    QtumDelegationPriv* priv;
+    QtepDelegation(const QtepDelegation&);
+    QtepDelegation& operator=(const QtepDelegation&);
+    QtepDelegationPriv* priv;
 };
 #endif

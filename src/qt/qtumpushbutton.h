@@ -1,14 +1,14 @@
-#ifndef QTUMPUSHBUTTON_H
-#define QTUMPUSHBUTTON_H
+#ifndef QTEPPUSHBUTTON_H
+#define QTEPPUSHBUTTON_H
 #include <QPushButton>
 #include <QStyleOptionButton>
 #include <QIcon>
 
-class QtumPushButton : public QPushButton
+class QtepPushButton : public QPushButton
 {
 public:
-    explicit QtumPushButton(QWidget * parent = Q_NULLPTR);
-    explicit QtumPushButton(const QString &text, QWidget *parent = Q_NULLPTR);
+    explicit QtepPushButton(QWidget * parent = Q_NULLPTR);
+    explicit QtepPushButton(const QString &text, QWidget *parent = Q_NULLPTR);
 
 protected:
     void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
@@ -21,4 +21,4 @@ private:
     QIcon m_downIcon;
 };
 
-#endif // QTUMPUSHBUTTON_H
+#endif // QTEPPUSHBUTTON_H

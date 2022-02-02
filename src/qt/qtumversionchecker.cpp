@@ -1,4 +1,4 @@
-#include <qt/qtumversionchecker.h>
+#include <qt/qtepversionchecker.h>
 #include <clientversion.h>
 
 #include <QNetworkAccessManager>
@@ -8,28 +8,28 @@
 #include <QRegularExpression>
 #include <QRegularExpressionMatchIterator>
 
-#define paternVersion "qtum-([0-9]+\\.)?([0-9]+\\.)?([0-9]+)-"
+#define paternVersion "qtep-([0-9]+\\.)?([0-9]+\\.)?([0-9]+)-"
 
-QtumVersionChecker::QtumVersionChecker(QObject *parent) : QObject(parent)
+QtepVersionChecker::QtepVersionChecker(QObject *parent) : QObject(parent)
 {
     currentVersion = Version(CLIENT_VERSION_MAJOR, CLIENT_VERSION_MINOR, CLIENT_VERSION_REVISION);
 }
 
-QtumVersionChecker::~QtumVersionChecker()
+QtepVersionChecker::~QtepVersionChecker()
 {
 
 }
 
-bool QtumVersionChecker::newVersionAvailable()
+bool QtepVersionChecker::newVersionAvailable()
 {
     Version maxReleaseVersion = getMaxReleaseVersion();
     return maxReleaseVersion > currentVersion;
 }
 
-QList<Version> QtumVersionChecker::getVersions()
+QList<Version> QtepVersionChecker::getVersions()
 {
     QNetworkAccessManager manager;
-    QNetworkReply *response = manager.get(QNetworkRequest(QUrl(QTUM_RELEASES)));
+    QNetworkReply *response = manager.get(QNetworkRequest(QUrl(QTEP_RELEASES)));
     QEventLoop event;
     connect(response, &QNetworkReply::finished, &event, &QEventLoop::quit);
     event.exec();
@@ -52,7 +52,7 @@ QList<Version> QtumVersionChecker::getVersions()
     return versions;
 }
 
-Version QtumVersionChecker::getMaxReleaseVersion()
+Version QtepVersionChecker::getMaxReleaseVersion()
 {
     QList<Version> versions = getVersions();
     Version maxVersion;

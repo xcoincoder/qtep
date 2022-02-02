@@ -1,13 +1,13 @@
-#ifndef QTUMUTILS_H
-#define QTUMUTILS_H
+#ifndef QTEPUTILS_H
+#define QTEPUTILS_H
 
 #include <libdevcore/Common.h>
 #include <libdevcore/FixedHash.h>
 
 /**
- * qtumutils Provides utility functions to EVM for functionalities that already exist in qtum
+ * qteputils Provides utility functions to EVM for functionalities that already exist in qtep
  */
-namespace qtumutils
+namespace qteputils
 {
 /**
  * @brief btc_ecrecover Wrapper to CPubKey::RecoverCompact

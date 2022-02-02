@@ -8,7 +8,7 @@ from test_framework.util import *
 from test_framework.blocktools import *
 from test_framework.mininode import *
 from test_framework.address import *
-from test_framework.qtum import *
+from test_framework.qtep import *
 import time
 from test_framework.key import ECKey
 from test_framework.script import *
@@ -22,7 +22,7 @@ def find_unspent(node, amount):
             return CTxIn(COutPoint(int(unspent['txid'], 16), unspent['vout']), nSequence=0)
     assert(False)
 
-class QtumBlockHeaderTest(BitcoinTestFramework):
+class QtepBlockHeaderTest(BitcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.setup_clean_chain = True
@@ -175,4 +175,4 @@ class QtumBlockHeaderTest(BitcoinTestFramework):
             self.reconnect_p2p()
 
 if __name__ == '__main__':
-    QtumBlockHeaderTest().main()
+    QtepBlockHeaderTest().main()

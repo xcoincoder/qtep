@@ -4,11 +4,11 @@ from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import *
 from test_framework.script import *
 from test_framework.mininode import *
-from test_framework.qtum import *
+from test_framework.qtep import *
 from test_framework.address import *
 import time
 
-class QtumCombinedOutputsExceedGasLimitTest(BitcoinTestFramework):
+class QtepCombinedOutputsExceedGasLimitTest(BitcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1
@@ -48,4 +48,4 @@ class QtumCombinedOutputsExceedGasLimitTest(BitcoinTestFramework):
         assert_equal(self.node.getblockcount(), block_count+2)
 
 if __name__ == '__main__':
-    QtumCombinedOutputsExceedGasLimitTest().main()
+    QtepCombinedOutputsExceedGasLimitTest().main()

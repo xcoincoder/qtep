@@ -6,7 +6,7 @@
 #include <QStringList>
 #include <QList>
 #include <QVariantMap>
-class QtumHwiToolPriv;
+class QtepHwiToolPriv;
 class InstallDevicePriv;
 class WalletModel;
 class ExecRPCCommand;
@@ -52,22 +52,22 @@ public:
 };
 
 /**
- * @brief The QtumHwiTool class Communicate with the Qtum Hardware Wallet Interface Tool
+ * @brief The QtepHwiTool class Communicate with the Qtep Hardware Wallet Interface Tool
  */
-class QtumHwiTool : public QObject
+class QtepHwiTool : public QObject
 {
     Q_OBJECT
 public:
     /**
-     * @brief QtumHwiTool Constructor
+     * @brief QtepHwiTool Constructor
      * @param parent Parent object
      */
-    explicit QtumHwiTool(QObject *parent = nullptr);
+    explicit QtepHwiTool(QObject *parent = nullptr);
 
     /**
-     * @brief ~QtumHwiTool Destructor
+     * @brief ~QtepHwiTool Destructor
      */
-    ~QtumHwiTool();
+    ~QtepHwiTool();
 
     /**
      * @brief enumerate Enumerate hardware wallet devices
@@ -250,7 +250,7 @@ private:
     bool execRPC(ExecRPCCommand* cmd, const QMap<QString, QString>& lstParams, QVariant& result, QString& resultJson);
     void addError(const QString& error);
 
-    QtumHwiToolPriv* d;
+    QtepHwiToolPriv* d;
 };
 
 #endif // QTEPHWITOOL_H

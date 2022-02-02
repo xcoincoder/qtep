@@ -3,7 +3,7 @@
 
 #include <QObject>
 
-#define QTEP_RELEASES "https://github.com/xcoincoder/qtum/releases"
+#define QTEP_RELEASES "https://github.com/xcoincoder/qtep/releases"
 
 class Version {
 
@@ -79,12 +79,12 @@ private:
     }
 };
 
-class QtumVersionChecker : public QObject
+class QtepVersionChecker : public QObject
 {
     Q_OBJECT
 public:
-    explicit QtumVersionChecker(QObject *parent = 0);
-    ~QtumVersionChecker();
+    explicit QtepVersionChecker(QObject *parent = 0);
+    ~QtepVersionChecker();
 
     bool newVersionAvailable();
 

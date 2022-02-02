@@ -8,7 +8,7 @@ from test_framework.util import *
 from test_framework.blocktools import *
 from test_framework.mininode import *
 from test_framework.address import *
-from test_framework.qtum import *
+from test_framework.qtep import *
 from test_framework.script import *
 import time
 import pprint
@@ -31,7 +31,7 @@ qrc20listtransactions
 """
 
 
-class QtumQRC20Test(BitcoinTestFramework):
+class QtepQRC20Test(BitcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.setup_clean_chain = True
@@ -329,4 +329,4 @@ class QtumQRC20Test(BitcoinTestFramework):
 
 
 if __name__ == '__main__':
-    QtumQRC20Test().main()
+    QtepQRC20Test().main()

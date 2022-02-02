@@ -4,7 +4,7 @@ from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import *
 from test_framework.script import *
 from test_framework.mininode import *
-from test_framework.qtum import *
+from test_framework.qtep import *
 from test_framework.address import *
 from test_framework.blocktools import *
 import sys
@@ -13,9 +13,9 @@ import io
 import random
 
 """
-Note, these tests do not test the functionality of the DGP template contract itself, for tests for the DGP template, see qtum-dgp.py
+Note, these tests do not test the functionality of the DGP template contract itself, for tests for the DGP template, see qtep-dgp.py
 """
-class QtumDGPActivation(BitcoinTestFramework):
+class QtepDGPActivation(BitcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1
@@ -117,10 +117,10 @@ class QtumDGPActivation(BitcoinTestFramework):
         # Now we should only allow new 1MB blocks,
         # however the old 8MB block not cause any errors when restarting since it was accepted at a time when 8MB was the block size limit
 
-        # Restart the qtumd to verify that no crashes occurs on startup
+        # Restart the qtepd to verify that no crashes occurs on startup
         self.stop_nodes()
         self.start_nodes()
 
 
 if __name__ == '__main__':
-    QtumDGPActivation().main()
+    QtepDGPActivation().main()

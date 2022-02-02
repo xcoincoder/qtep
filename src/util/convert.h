@@ -1,7 +1,7 @@
 #ifndef QTEP_CONVERT_H
 #define QTEP_CONVERT_H
 
-////////////////////////////////////////////////////// qtum
+////////////////////////////////////////////////////// qtep
 #include <uint256.h>
 #include <libdevcore/Common.h>
 #include <libdevcore/CommonData.h>

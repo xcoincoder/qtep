@@ -4,15 +4,15 @@ from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import *
 from test_framework.script import *
 from test_framework.mininode import *
-from test_framework.qtum import *
+from test_framework.qtep import *
 from test_framework.address import *
 from test_framework.blocktools import *
 
 
 """
-Note, these tests do not test the functionality of the DGP template contract itself, for tests for the DGP template, see qtum-dgp.py
+Note, these tests do not test the functionality of the DGP template contract itself, for tests for the DGP template, see qtep-dgp.py
 """
-class QtumDGPGasPriceLingeringMempoolTxTest(BitcoinTestFramework):
+class QtepDGPGasPriceLingeringMempoolTxTest(BitcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 2
@@ -81,4 +81,4 @@ class QtumDGPGasPriceLingeringMempoolTxTest(BitcoinTestFramework):
 
 
 if __name__ == '__main__':
-    QtumDGPGasPriceLingeringMempoolTxTest().main()
+    QtepDGPGasPriceLingeringMempoolTxTest().main()

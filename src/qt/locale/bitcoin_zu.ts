@@ -42,12 +42,12 @@
         <translation>Ukuthola amakheli</translation>
     </message>
     <message>
-        <source>These are your Qtum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Lawa amakheli akho e-Qtum okuthumela izinkokhelo. Njalo hlola inani nekheli elitholwayo ngaphambi kokuthumela izinhlamvu zemali.</translation>
+        <source>These are your Qtep addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Lawa amakheli akho e-Qtep okuthumela izinkokhelo. Njalo hlola inani nekheli elitholwayo ngaphambi kokuthumela izinhlamvu zemali.</translation>
     </message>
     <message>
-        <source>These are your Qtum addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>Lawa amakheli akho e-Qtum athola izinkokhelo. Sebenzisa inkinobho ethi 'Dala ikheli elisha lokuthola' kuthebhu yokwamukela ukudala amakheli amasha.</translation>
+        <source>These are your Qtep addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
+        <translation>Lawa amakheli akho e-Qtep athola izinkokhelo. Sebenzisa inkinobho ethi 'Dala ikheli elisha lokuthola' kuthebhu yokwamukela ukudala amakheli amasha.</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -145,7 +145,7 @@ Lahla YONKE IQTEP YAKHO!</translation>
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>QtumGUI</name>
+    <name>QtepGUI</name>
     </context>
 <context>
     <name>CoinControlDialog</name>
@@ -286,6 +286,6 @@ Lahla YONKE IQTEP YAKHO!</translation>
     </message>
     </context>
 <context>
-    <name>qtum-core</name>
+    <name>qtep-core</name>
     </context>
 </TS>

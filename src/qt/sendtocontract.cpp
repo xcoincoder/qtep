@@ -71,7 +71,7 @@ SendToContract::SendToContract(const PlatformStyle *platformStyle, QWidget *pare
     ui->lineEditAmount->setEnabled(true);
     ui->labelContractAddress->setToolTip(tr("The contract address that will receive the funds and data."));
     ui->labelAmount->setToolTip(tr("The amount in QTEP to send. Default = 0."));
-    ui->labelSenderAddress->setToolTip(tr("The qtum address that will be used as sender."));
+    ui->labelSenderAddress->setToolTip(tr("The qtep address that will be used as sender."));
 
     m_tabInfo = new TabBarInfo(ui->stackedWidget);
     m_tabInfo->addTab(0, tr("Send To Contract"));
@@ -146,7 +146,7 @@ void SendToContract::setModel(WalletModel *_model)
 
     if (bCreateUnsigned) {
         ui->pushButtonSendToContract->setText(tr("Cr&eate Unsigned"));
-        ui->pushButtonSendToContract->setToolTip(tr("Creates a Partially Signed Qtum Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.").arg(PACKAGE_NAME));
+        ui->pushButtonSendToContract->setToolTip(tr("Creates a Partially Signed Qtep Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.").arg(PACKAGE_NAME));
     }
 }
 
@@ -245,7 +245,7 @@ void SendToContract::on_sendToContractClicked()
         if (bCreateUnsigned) {
             questionString.append(tr("Do you want to draft this transaction?"));
             questionString.append("<br /><span style='font-size:10pt;'>");
-            questionString.append(tr("Please, review your transaction proposal. This will produce a Partially Signed Qtum Transaction (PSBT) which you can copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.").arg(PACKAGE_NAME));
+            questionString.append(tr("Please, review your transaction proposal. This will produce a Partially Signed Qtep Transaction (PSBT) which you can copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.").arg(PACKAGE_NAME));
             questionString.append("</span>");
             questionString.append(tr("<br /><br />Send to the contract:<br />"));
         } else {

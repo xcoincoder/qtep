@@ -4,11 +4,11 @@
 #include <QStyleOptionButton>
 #include <QIcon>
 
-class QtumPushButton : public QPushButton
+class QtepPushButton : public QPushButton
 {
 public:
-    explicit QtumPushButton(QWidget * parent = Q_NULLPTR);
-    explicit QtumPushButton(const QString &text, QWidget *parent = Q_NULLPTR);
+    explicit QtepPushButton(QWidget * parent = Q_NULLPTR);
+    explicit QtepPushButton(const QString &text, QWidget *parent = Q_NULLPTR);
 
 protected:
     void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;

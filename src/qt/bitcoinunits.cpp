@@ -62,9 +62,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Qtums");
-    case mBTC: return QString("Milli-Qtums (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-Qtums (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case BTC: return QString("Qteps");
+    case mBTC: return QString("Milli-Qteps (1 / 1" THIN_SP_UTF8 "000)");
+    case uBTC: return QString("Micro-Qteps (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     case SAT: return QString("Satoshi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }

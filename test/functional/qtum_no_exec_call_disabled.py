@@ -5,7 +5,7 @@ from test_framework.util import *
 from test_framework.script import *
 from test_framework.mininode import *
 from test_framework.address import *
-from test_framework.qtum import *
+from test_framework.qtep import *
 from test_framework.blocktools import *
 import sys
 import random
@@ -19,7 +19,7 @@ def rpc_sign_transaction(node, tx):
     tx_signed.deserialize(f)
     return tx_signed
 
-class QtumNoExecCallDisabledTest(BitcoinTestFramework):
+class QtepNoExecCallDisabledTest(BitcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1
@@ -72,4 +72,4 @@ class QtumNoExecCallDisabledTest(BitcoinTestFramework):
 
 
 if __name__ == '__main__':
-    QtumNoExecCallDisabledTest().main()
+    QtepNoExecCallDisabledTest().main()

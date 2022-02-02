@@ -5,8 +5,8 @@ from test_framework.util import *
 from test_framework.script import *
 from test_framework.mininode import *
 from test_framework.address import *
-from test_framework.qtum import *
-from test_framework.qtumconfig import *
+from test_framework.qtep import *
+from test_framework.qtepconfig import *
 from test_framework.blocktools import *
 
 from test_framework.address import *
@@ -14,7 +14,7 @@ import sys
 import random
 import time
 
-class QtumEVMGlobalsTest(BitcoinTestFramework):
+class QtepEVMGlobalsTest(BitcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 2
@@ -234,4 +234,4 @@ class QtumEVMGlobalsTest(BitcoinTestFramework):
         self.sync_all()
 
 if __name__ == '__main__':
-    QtumEVMGlobalsTest().main()
+    QtepEVMGlobalsTest().main()

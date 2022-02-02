@@ -6,7 +6,7 @@
 #include <qt/waitmessagebox.h>
 #include <qt/hardwarekeystoredialog.h>
 #include <qt/walletmodel.h>
-#include <qt/qtumhwitool.h>
+#include <qt/qtephwitool.h>
 #include <qt/guiconstants.h>
 #include <qt/guiutil.h>
 
@@ -14,7 +14,7 @@
 
 HardwareSignTx::HardwareSignTx(QWidget *_widget) : QObject(_widget)
 {
-    tool = new QtumHwiTool(this);
+    tool = new QtepHwiTool(this);
     widget = _widget;
 }
 

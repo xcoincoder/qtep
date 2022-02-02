@@ -1989,7 +1989,7 @@ bool AppInitMain(NodeContext& node)
                 LOCK(cs_main);
 
                 QtepDGP qtepDGP(globalState.get(), fGettingValuesDGP);
-                globalSealEngine->setQtepSchedule(qtepDGP.getGasSchedule(::ChainActive().Height() + (::ChainActive().Height()+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1) ));
+                globalSealEngine->setQtumSchedule(qtepDGP.getGasSchedule(::ChainActive().Height() + (::ChainActive().Height()+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1) ));
 
                 if (!is_coinsview_empty) {
                     uiInterface.InitMessage(_("Verifying blocks...").translated);

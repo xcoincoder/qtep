@@ -2924,7 +2924,7 @@ bool CChainState::ConnectBlock(const CBlock& block, BlockValidationState& state,
 
     ///////////////////////////////////////////////// // qtep
     QtepDGP qtepDGP(globalState.get(), fGettingValuesDGP);
-    globalSealEngine->setQtepSchedule(qtepDGP.getGasSchedule(pindex->nHeight + (pindex->nHeight+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1) ));
+    globalSealEngine->setQtumSchedule(qtepDGP.getGasSchedule(pindex->nHeight + (pindex->nHeight+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1) ));
     uint32_t sizeBlockDGP = qtepDGP.getBlockSize(pindex->nHeight + (pindex->nHeight+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1));
     uint64_t minGasPrice = qtepDGP.getMinGasPrice(pindex->nHeight + (pindex->nHeight+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1));
     uint64_t blockGasLimit = qtepDGP.getBlockGasLimit(pindex->nHeight + (pindex->nHeight+1 >= chainparams.GetConsensus().QIP7Height ? 0 : 1));

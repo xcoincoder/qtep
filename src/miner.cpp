@@ -259,7 +259,7 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
 
     //////////////////////////////////////////////////////// qtep
     QtepDGP qtepDGP(globalState.get(), fGettingValuesDGP);
-    globalSealEngine->setQtepSchedule(qtepDGP.getGasSchedule(nHeight));
+    globalSealEngine->setQtumSchedule(qtepDGP.getGasSchedule(nHeight));
     uint32_t blockSizeDGP = qtepDGP.getBlockSize(nHeight);
     minGasPrice = qtepDGP.getMinGasPrice(nHeight);
     if(gArgs.IsArgSet("-staker-min-tx-gas-price")) {
